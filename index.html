@@ -142,3 +142,222 @@
     </footer>
 </body>
 </html>
+Notes:
+Replace the placeholder image URLs (https://via.placeholder.com/400) with actual images of the dishes.
+Update the href in the link for the newsletter sign-up to the appropriate spreadsheet or form.
+You can add more recipes by duplicating and modifying the accordion-item structure.
+
+
+
+
+
+You said:
+Can you add four more recipes to the page please?
+ChatGPT said:
+ChatGPT
+Certainly! Here's the updated HTML code with four additional recipes added:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balkan Real Tradition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6cc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff944d;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff4e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .accordion {
+            margin-bottom: 20px;
+        }
+        .accordion-item {
+            margin-bottom: 10px;
+            border: 1px solid #ff944d;
+            border-radius: 5px;
+        }
+        .accordion-header {
+            background-color: #ff944d;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .accordion-body {
+            display: none;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #ff944d;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .highlight {
+            color: #ff80bf;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .newsletter {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #ffe6f2;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+        function toggleAccordion(id) {
+            const body = document.getElementById(id);
+            body.style.display = body.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Balkan Real Tradition</h1>
+    </header>
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('recipe1')">Ćevapi (Grilled Minced Meat)</div>
+                <div class="accordion-body" id="recipe1">
+                    <p><span class="highlight">Description:</span> A popular Balkan street food made from a mix of ground meats, typically beef and lamb, served with flatbread and onions.</p>
+                    <img src="https://via.placeholder.com/400" alt="Ćevapi">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>500g ground beef</li>
+                        <li>250g ground lamb</li>
+                        <li>1 small onion, finely chopped</li>
+                        <li>3 cloves garlic, minced</li>
+                        <li>1 tsp paprika</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Mix all ingredients thoroughly in a bowl.</li>
+                        <li>Shape the mixture into small, sausage-like pieces.</li>
+                        <li>Grill over medium heat until cooked through, about 5-7 minutes per side.</li>
+                        <li>Serve with flatbread and chopped onions.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('recipe2')">Sarma (Stuffed Cabbage Rolls)</div>
+                <div class="accordion-body" id="recipe2">
+                    <p><span class="highlight">Description:</span> A hearty dish of cabbage leaves stuffed with a mixture of meat and rice, simmered in a tangy tomato sauce.</p>
+                    <img src="https://via.placeholder.com/400" alt="Sarma">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>1 large cabbage</li>
+                        <li>500g ground pork</li>
+                        <li>200g rice</li>
+                        <li>1 onion, chopped</li>
+                        <li>400ml tomato sauce</li>
+                        <li>Salt, pepper, and paprika to taste</li>
+                    </ul>
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Boil cabbage leaves until soft.</li>
+                        <li>Mix ground pork, rice, onion, and spices in a bowl.</li>
+                        <li>Wrap the mixture in cabbage leaves to form rolls.</li>
+                        <li>Place rolls in a pot, cover with tomato sauce, and simmer for 1.5-2 hours.</li>
+                        <li>Serve warm.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('recipe3')">Burek (Savory Pastry)</div>
+                <div class="accordion-body" id="recipe3">
+                    <p><span class="highlight">Description:</span> A flaky pastry filled with minced meat, cheese, or spinach, perfect for breakfast or as a snack.</p>
+                    <img src="https://via.placeholder.com/400" alt="Burek">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>500g phyllo dough</li>
+                        <li>300g ground beef</li>
+                        <li>200g feta cheese</li>
+                        <li>1 onion, chopped</li>
+                        <li>100ml yogurt</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Sauté ground beef and onion until browned, then season.</li>
+                        <li>Layer phyllo dough, adding the meat mixture or cheese between layers.</li>
+                        <li>Roll the dough tightly or arrange it in a spiral shape in a baking pan.</li>
+                        <li>Bake at 200°C (400°F) until golden brown, about 30 minutes.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('recipe4')">Baklava (Sweet Pastry)</div>
+                <div class="accordion-body" id="recipe4">
+                    <p><span class="highlight">Description:</span> A rich, sweet dessert made of layers of phyllo dough, nuts, and honey syrup.</p>
+                    <img src="https://via.placeholder.com/400" alt="Baklava">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>500g phyllo dough</li>
+                        <li>300g walnuts, finely chopped</li>
+                        <li>200g butter, melted</li>
+                        <li>200g sugar</li>
+                        <li>250ml honey</li>
+                        <li>1 tsp cinnamon</li>
+                    </ul>
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Layer phyllo dough in a baking pan, brushing each layer with butter and adding nuts between layers.</li>
+                        <li>Bake at 180°C (350°F) for 40-50 minutes until golden.</li>
+                        <li>Heat honey and sugar to make syrup, then pour over baked baklava.</li>
+                        <li>Cool completely before serving.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion('recipe5')">Moussaka</div>
+                <div class="accordion-body" id="recipe5">
+                    <p><span class="highlight">Description:</span> A layered dish of eggplant, potatoes, and ground meat, baked with a creamy béchamel sauce.</p>
+                    <img src="https://via.placeholder.com/400" alt="Moussaka">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>2 eggplants</li>
+                        <li>3 potatoes</li>
+                        <li>500g ground beef or lamb</li>
+                        <li>1 onion, chopped</li>
+                        <li>300ml béchamel sauce</li>
+                        <li>Salt, pepper, and paprika to taste</li>
+                    </ul>
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Slice eggplants and potatoes, then fry or roast until soft.</li>
+                        <li>Sauté ground meat with onion and spices.</li>
+                        <li>Layer eggplants, potatoes, and meat in a baking dish, topping with béchamel sauce.</li>
+                        <li>Bake at 180°C (350°F) for 30-40 minutes until golden.</li>
+                    </ol>
+                </div>
+            </div>
+        </div
